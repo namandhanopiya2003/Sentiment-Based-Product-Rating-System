@@ -1,0 +1,4 @@
+pandas
+scikit-learn
+joblib
+flask   # only if you want web front-end
