@@ -1,5 +1,7 @@
+# For loading trained model
 import joblib
 
+# Predicts sentiment of input text using saved model
 def predict_sentiment(text, model_path='../models/sentiment_model.pkl'):
     model = joblib.load(model_path)
     cleaned_text = clean_text(text)
@@ -9,6 +11,7 @@ def predict_sentiment(text, model_path='../models/sentiment_model.pkl'):
     rating = map_sentiment_to_rating(pred, prob)
     return pred, prob, rating
 
+# Cleans the review text by removing unwanted characters
 def clean_text(text):
     import re
     text = re.sub(r'<.*?>', ' ', text)
@@ -17,13 +20,13 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
+# It converts predicted sentiment + confidence into a 1–5 star rating
 def map_sentiment_to_rating(sentiment, prob):
-    # Simple mapping, can be improved
     if sentiment == 'negative':
         return 1 if prob > 0.7 else 2
     elif sentiment == 'neutral':
         return 3
-    else:  # positive
+    else:  
         return 5 if prob > 0.7 else 4
 
 if __name__ == "__main__":
