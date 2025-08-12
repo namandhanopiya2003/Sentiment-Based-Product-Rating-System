@@ -1,0 +1,1 @@
+Section for storing all required files for the program, such as utility files and related resources.
