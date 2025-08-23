@@ -24,27 +24,27 @@
 
 ## 📁 PROJECT FOLDER STRUCTURE ==>
 
-sentiment_rating_project/
-├── data/
-│ └── amazon_reviews.csv                                    # Input dataset
-│
-├── models/
-│ └── sentiment_model.pkl                                   # Trained model file
-│
-├── src/
-│ ├── data_preprocessing.py                                 # Data cleaning & preprocessing logic
-│ ├── train_model.py                                        # Script to train and evaluate the model
-│ ├── inference.py                                          # Prediction script
-│ └── utils.py                                              # Helper functions
-│
-├── app/
-│ ├── app.py                                                # Flask web application (optional)
-│ └── templates/
-│ └── index.html                                            # Simple HTML UI
-│
-├── venv/
-│
-├── requirements.txt                                        # Python dependencies
+sentiment_rating_project/<br>
+├── data/<br>
+│ └── amazon_reviews.csv                                    # Input dataset<br>
+│<br>
+├── models/<br>
+│ └── sentiment_model.pkl                                   # Trained model file<br>
+│<br>
+├── src/<br>
+│ ├── data_preprocessing.py                                 # Data cleaning & preprocessing logic<br>
+│ ├── train_model.py                                        # Script to train and evaluate the model<br>
+│ ├── inference.py                                          # Prediction script<br>
+│ └── utils.py                                              # Helper functions<br>
+│<br>
+├── app/<br>
+│ ├── app.py                                                # Flask web application (optional)<br>
+│ └── templates/<br>
+│ └── index.html                                            # Simple HTML UI<br>
+│<br>
+├── venv/<br>
+│<br>
+├── requirements.txt                                        # Python dependencies<br>
 └── README.md                                               # Project description and guide
 
 ---
@@ -152,3 +152,4 @@ For questions or feedback, feel free to reach out!
 
 
 ---
+
