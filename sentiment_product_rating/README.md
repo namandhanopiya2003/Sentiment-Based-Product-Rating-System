@@ -139,9 +139,9 @@ python inference.py
 
 ## ✨ SAMPLE OUTPUT ==>
 
-📝 Input Review: "Absolutely loved the product, quality was top-notch!"
-😄 Sentiment: Positive
-🌟 Predicted Rating: 5
+📝 Input Review: "Absolutely loved the product, quality was top-notch!"<br>
+😄 Sentiment: Positive<br>
+🌟 Predicted Rating: 5<br>
 📊 Confidence: 1.00
 
 ---
@@ -149,5 +149,6 @@ python inference.py
 ## 📬 CONTACT ==>
 
 For questions or feedback, feel free to reach out!
+
 
 ---
