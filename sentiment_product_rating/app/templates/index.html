@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Review Sentiment Analysis</title>
+</head>
+<body>
+    <h2>Enter Customer Review</h2>
+    <form method="POST">
+        <textarea name="review" rows="5" cols="60" placeholder="Enter product review here...">{{ review }}</textarea><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if rating %}
+        <h3>Predicted Sentiment: {{ sentiment }}</h3>
+        <h3>Confidence: {{ confidence | round(2) }}</h3>
+        <h3>Predicted Product Rating (1 to 5 stars): {{ rating }}</h3>
+    {% endif %}
+</body>
+</html>
