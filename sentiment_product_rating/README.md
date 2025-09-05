@@ -109,34 +109,6 @@ python inference.py
 
 ---
 
-## ✅ IMPROVEMENTS MADE ==>
-
-- Added model saving using Pickle for reusability.
-
-- Modularized the code into separate files for training and inference.
-
-- Implemented confidence-based sentiment prediction for enhanced interpretability.
-
-- Included rating prediction mapped from sentiment class.
-
-- Used TF-IDF vectorization for better text representation.
-
----
-
-## 📌 To Do / Future Enhancements ==>
-
-- Add a user-friendly GUI or web interface for input and output visualization.
-
-- Improve model accuracy with larger and more diverse datasets.
-
-- Integrate with a product review platform or Android app.
-
-- Deploy as a REST API using Flask or FastAPI for external use.
-
-- Add functionality to analyze and visualize sentiment trends over time.
-
----
-
 ## ✨ SAMPLE OUTPUT ==>
 
 📝 Input Review: "Absolutely loved the product, quality was top-notch!"<br>
@@ -150,6 +122,4 @@ python inference.py
 
 For questions or feedback, feel free to reach out!
 
-
 ---
-
