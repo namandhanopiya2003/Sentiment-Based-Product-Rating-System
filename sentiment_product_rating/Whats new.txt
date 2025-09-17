@@ -1,0 +1,81 @@
+This document highlights the advanced features added to the Sentiment-Based Product Rating System project. These upgrades enhance the system’s intelligence, usability, and diagnostic capability beyond simple sentiment prediction.
+
+1. Root Cause Analysis Engine ==>
+📌 Description: Beyond just identifying sentiment, the system now automatically detects underlying issues mentioned in customer reviews. This allows for granular diagnostic insights such as:
+
+❌ late_delivery
+📦 product_damage
+❓ missing_manual
+💸 overpriced
+📷 misleading_images
+📊 A multi-label classification model was trained using real-world review data, enabling detection of multiple issues per review.
+
+---
+
+2. Intelligent Improvement Suggestion System ==>
+📌 Description: For every detected issue, the system now recommends specific improvement actions, providing actionable feedback to businesses. For example:
+
+🔧 “Improve packaging”
+🚚 “Use faster courier”
+👨‍💼 “Train support staff better”
+📜 “Include instruction manuals”
+This is achieved using a second ML model trained to map review text to likely corrective suggestions.
+
+---
+
+3. Dual-Model Enhancement ==>
+Two new models were added and trained:
+
+🧩 cause_model.pkl – Multi-label classifier for root causes
+💡 suggestion_model.pkl – Multi-label classifier for suggested improvements
+These work in sync with the sentiment classifier, forming a full diagnostic pipeline from "customer voice" to "corrective action."
+
+---
+
+4. Unified Inference System ==>
+📌 Description: The inference.py script has been fully upgraded to handle:
+
+✅ Sentiment Prediction
+🕵️ Root Cause Inference
+🛠️ Suggestion Recommendation
+
+---
+
+All outputs are returned in a clean YAML format, making it easy to interpret ==>
+
+Review: The delivery was late and the product was slightly damaged.
+Predicted Sentiment: Negative
+Confidence: '0.86'
+Predicted Rating: 2 stars
+
+Inferred Issues:
+- late_delivery
+- product_damage
+
+Suggested Improvements:
+- Improve packaging
+- Use faster courier
+
+Confidence Scores:
+- 97.4%
+- 97.4%
+
+---
+
+🗃️ New / Updated Files in Version-2 ==>
+
+File	                                                          Purpose
+
+train_cause_model.py	                                          Trains the root cause detection model
+train_suggestion_model.py	                                      Trains the improvement suggestion model
+cause_analysis.py	                                              Loads and predicts root causes from reviews
+suggestion_system.py	                                          Loads and predicts actionable suggestions
+inference.py	                                                  Updated to include sentiment, cause, and suggestions
+requirements.txt	                                              Updated with pyyaml, scikit-learn, etc.
+
+---
+
+✅ Result ==>
+The project now acts as a complete customer feedback analyzer, not just a rating predictor — making it ideal for real-world deployment in e-commerce or service platforms.
+
+---
