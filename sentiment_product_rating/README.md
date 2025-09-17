@@ -32,9 +32,13 @@ sentiment_rating_project/<br>
 │ └── sentiment_model.pkl                                   # Trained model file<br>
 │<br>
 ├── src/<br>
+│ ├── cause_analysis.py                                     # Loads cause model and predicts inferred issues<br>
 │ ├── data_preprocessing.py                                 # Data cleaning & preprocessing logic<br>
-│ ├── train_model.py                                        # Script to train and evaluate the model<br>
 │ ├── inference.py                                          # Prediction script<br>
+│ ├── suggestion_system.py                                  # Loads suggestion model and predicts improvements<br>
+│ ├── train_cause_model.py                                  # Script to train dissatisfaction cause detection model<br>
+│ ├── train_model.py                                        # Script to train and evaluate the model<br>
+│ ├── train_suggestion_model.py                             # Script to train improvement suggestion model<br>
 │ └── utils.py                                              # Helper functions<br>
 │<br>
 ├── app/<br>
@@ -123,3 +127,4 @@ python inference.py
 For questions or feedback, feel free to reach out!
 
 ---
+
